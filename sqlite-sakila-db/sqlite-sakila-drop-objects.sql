@@ -58,13 +58,3 @@ DROP TABLE city
 ;
 DROP TABLE country
 ;
-
--- Procedures and views
---drop procedure film_in_stock;
---drop procedure film_not_in_stock;
---drop function get_customer_balance;
---drop function inventory_held_by_customer;
---drop function inventory_in_stock;
---drop procedure rewards_report;
-
-
