@@ -27,17 +27,17 @@ ALTER PROCEDURAL LANGUAGE plpgsql OWNER TO postgres;
 SET search_path = public, pg_catalog;
 
 --
--- Name: actor_actor_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: actor_id_seq_v2; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
-CREATE SEQUENCE actor_actor_id_seq
+CREATE SEQUENCE actor_id_seq_v2
     INCREMENT BY 1
     NO MAXVALUE
     NO MINVALUE
     CACHE 1;
 
 
-ALTER TABLE public.actor_actor_id_seq OWNER TO postgres;
+ALTER TABLE public.actor_id_seq_v2 OWNER TO postgres;
 
 SET default_tablespace = '';
 
@@ -48,7 +48,7 @@ SET default_with_oids = false;
 --
 
 CREATE TABLE actor (
-    actor_id integer DEFAULT nextval('actor_actor_id_seq'::regclass) NOT NULL,
+    actor_id integer DEFAULT nextval('actor_id_seq_v2'::regclass) NOT NULL,
     first_name character varying(45) NOT NULL,
     last_name character varying(45) NOT NULL,
     last_update timestamp without time zone DEFAULT now() NOT NULL
