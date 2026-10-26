@@ -81,3 +81,5 @@ http://www.etl-tools.com
 phase 4 ops check (sakila)
 
 to commit
+
+dialog rebase check
