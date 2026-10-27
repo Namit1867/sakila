@@ -78,3 +78,8 @@ The Sakila example database was originally developed by Mike Hillyer of the MySQ
 License: BSD
 Copyright DB Software Laboratory
 http://www.etl-tools.com
+phase 4 ops check (sakila)
+
+to commit
+
+dialog rebase check
